@@ -1,0 +1,19 @@
+{
+  "name": "documentos-graphql-frontend",
+  "version": "1.0.0",
+  "description": "Frontend client for documentos GraphQL api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotimi-babalola/documentos-graphql-frontend.git"
+  },
+  "author": "Rotimi Babalola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rotimi-babalola/documentos-graphql-frontend/issues"
+  },
+  "homepage": "https://github.com/rotimi-babalola/documentos-graphql-frontend#readme"
+}
