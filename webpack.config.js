@@ -1,4 +1,6 @@
 const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -23,5 +25,12 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Documentos',
+      template: './src/index.html',
+    }),
+  ],
 };
