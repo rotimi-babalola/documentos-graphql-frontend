@@ -1,5 +1,6 @@
 import React from 'react';
+import Navbar from './Navbar';
 
-const App = () => <h1>Hello Webpack</h1>;
+const App = () => <Navbar />;
 
 export default App;

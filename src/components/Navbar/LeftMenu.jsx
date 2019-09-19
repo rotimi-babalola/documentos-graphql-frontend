@@ -8,7 +8,7 @@ const LeftMenu = () => (
     <Menu.Item key="mail">
       <a href="/">Home</a>
     </Menu.Item>
-    <SubMenu title={<span>Blogs</span>}>
+    {/* <SubMenu title={<span>Blogs</span>}>
       <MenuItemGroup title="Item 1">
         <Menu.Item key="setting:1">Option 1</Menu.Item>
         <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -20,7 +20,7 @@ const LeftMenu = () => (
     </SubMenu>
     <Menu.Item key="alipay">
       <a href="/contact">Contact Us</a>
-    </Menu.Item>
+    </Menu.Item> */}
   </Menu>
 );
 
