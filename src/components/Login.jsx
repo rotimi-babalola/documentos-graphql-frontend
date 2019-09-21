@@ -26,12 +26,13 @@ const LoginForm = ({ form }) => {
           Login
         </Title>
         <Form.Item>
-          {getFieldDecorator('username', {
-            rules: [{ required: true, message: 'Please input your username!' }],
+          {getFieldDecorator('email', {
+            rules: [{ required: true, message: 'Please input your email!' }],
           })(
             <Input
-              prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-              placeholder="Username"
+              prefix={<Icon type="mail" className="p-login-page__icon" />}
+              placeholder="Email"
+              type="email"
             />,
           )}
         </Form.Item>
@@ -40,7 +41,7 @@ const LoginForm = ({ form }) => {
             rules: [{ required: true, message: 'Please input your Password!' }],
           })(
             <Input
-              prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+              prefix={<Icon type="lock" className="p-login-page__icon" />}
               type="password"
               placeholder="Password"
             />,
