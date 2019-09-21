@@ -5,8 +5,11 @@
     "browser": true
   },
   "rules": {
-    "max-len": [1, 70, 2, {"ignoreComments": true}],
+    "max-len": [1, 80, 2, {"ignoreComments": true}],
     "react/jsx-filename-extension": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "object-curly-newline": "off",
+    "arrow-parens": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }
