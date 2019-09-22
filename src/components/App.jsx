@@ -2,8 +2,7 @@ import React, { Suspense } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { PageHeader } from 'antd';
 import Loader from './Loader';
-import LoginPage from './Login';
-import Signup from './Signup';
+import { Login, Signup } from '../pages';
 
 const App = () => (
   <div>
@@ -11,7 +10,7 @@ const App = () => (
       <Router>
         <PageHeader onBack={() => null} title="Documentos" backIcon={false} />
         <Switch>
-          <Route path="/" exact component={LoginPage} />
+          <Route path="/" exact component={Login} />
           <Route path="/signup" component={Signup} />
         </Switch>
       </Router>

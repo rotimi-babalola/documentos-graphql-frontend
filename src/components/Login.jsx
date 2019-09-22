@@ -3,7 +3,7 @@ import { Form, Icon, Input, Button, Checkbox, Typography } from 'antd';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import '../styles/loginForm.scss';
+import '../styles/pages/loginForm.scss';
 
 const { Title } = Typography;
 
@@ -15,6 +15,7 @@ const LoginForm = ({ form }) => {
 
     form.validateFields((err, values) => {
       if (!err) {
+        // eslint-disable-next-line no-console
         console.log('Received values of form: ', values);
       }
     });
@@ -70,7 +71,7 @@ const LoginForm = ({ form }) => {
   );
 };
 
-const WrappedNormalLoginForm = Form.create({ name: 'normal_login' })(LoginForm);
+const WrappedLoginForm = Form.create({ name: 'login_form' })(LoginForm);
 
 LoginForm.propTypes = {
   form: PropTypes.shape({
@@ -79,4 +80,4 @@ LoginForm.propTypes = {
   }).isRequired,
 };
 
-export default WrappedNormalLoginForm;
+export default WrappedLoginForm;

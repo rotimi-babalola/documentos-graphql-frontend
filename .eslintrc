@@ -10,6 +10,8 @@
     "no-unused-vars": "warn",
     "object-curly-newline": "off",
     "arrow-parens": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off"
   }
 }
