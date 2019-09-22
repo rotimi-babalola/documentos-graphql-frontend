@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Icon, Input, Button, Checkbox, Typography } from 'antd';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import '../styles/loginForm.scss';
 
@@ -52,9 +53,9 @@ const LoginForm = ({ form }) => {
             valuePropName: 'checked',
             initialValue: true,
           })(<Checkbox>Remember me</Checkbox>)}
-          <a className="p-login-page__login-form-forgot" href="/reset">
+          <Link className="p-login-page__login-form-forgot" to="/reset">
             Forgot password
-          </a>
+          </Link>
           <Button
             type="primary"
             htmlType="submit"
@@ -62,7 +63,7 @@ const LoginForm = ({ form }) => {
           >
             Log in
           </Button>
-          Or <a href="/register">register now!</a>
+          Or <Link to="/signup">register now!</Link>
         </Form.Item>
       </Form>
     </div>
